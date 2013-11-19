@@ -3,7 +3,6 @@ module Main where
 import Hakyll
 import Data.Monoid
 import Data.Functor
-import Debug.Trace
 import System.FilePath.Posix (takeBaseName)
 
 configuration :: Configuration
