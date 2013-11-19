@@ -23,13 +23,24 @@ body {
 }
 
 .top-bar {
+    text-align: center;
     background-color: #CEE4E9;
-    height: 70px;
-    padding-top: 10px;
+    height: 100px;
+    padding: 20px;
     box-shadow: 0 0 3px;
 }
 
-.top-bar h1 {
+.top-bar div {
+    padding-right: 150px;
+    height: inherit;
+}
+
+.top-bar div img {
+    height: inherit;
+}
+
+.top-bar div h1 {
+    display: inline-block;
     margin: 10px 10px;
     text-shadow: #888 1px 1px 1px;
     font-family: 'Raleway';
