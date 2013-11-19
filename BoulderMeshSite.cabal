@@ -6,7 +6,7 @@ version:             0.1.0.0
 -- synopsis:            
 -- description:         
 -- license:             
-license-file:        LICENSE
+-- license-file:        LICENSE
 author:              Nick Vanderweit
 maintainer:          nick.vanderweit@gmail.com
 -- copyright:           
@@ -17,10 +17,10 @@ cabal-version:       >=1.10
 
 executable BoulderMeshSite
   main-is:             src/Main.hs
-  extensions:          OverloadedStrings
+  default-extensions:  OverloadedStrings
   -- other-modules:       
   -- other-extensions:    
   build-depends:       base >=4.6 && <4.7,
-                       hakyll
+                       hakyll >= 4.0.0.0
   -- hs-source-dirs:      
   default-language:    Haskell2010

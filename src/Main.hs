@@ -14,9 +14,16 @@ main = hakyllWith configuration $ do
         route idRoute
         compile compressCssCompiler
 
+    match "fonts/*" $ do
+        route idRoute
+        compile copyFileCompiler
+
     create ["index.html"] $ do
         route idRoute
+        let (~>)    = constField
+            context = "title" ~> "Boulder Meshnet Project"
+
         compile $ do
             makeItem ""
-                >>= loadAndApplyTemplate "templates/default.html" mempty
+                >>= loadAndApplyTemplate "templates/default.html" context
                 >>= relativizeUrls

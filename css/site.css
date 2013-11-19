@@ -1,7 +1,36 @@
-.top-bar {
-    border-bottom: 1px solid #111;
+@font-face {
+    font-family: 'Junction Sans-serif';
+    src: url('../fonts/Junction-webfont.eot');
+    src: url('../fonts/Junction-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'League Gothic';
+    src: url('../fonts/leaguegothic-regular-webfont.eot');
+    src: url('../fonts/leaguegothic-regular-webfont.woff') format('woff');
+}
+
+body {
+    background-color: #f9f9f9;
+    font-family: 'Junction Sans-serif', sans-serif;
 }
 
 .top-bar h1 {
+    margin: 10px 10px;
+    text-shadow: #888 1px 1px 1px;
+    font-family: 'League Gothic';
     text-align: center;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #222;
+    font-size: 70px;
+}
+
+.inner-pane {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 100px;
+    background-color: #fff;
+    box-shadow: 0 1px 5px;
 }
