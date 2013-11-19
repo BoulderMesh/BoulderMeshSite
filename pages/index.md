@@ -1,13 +1,18 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas nunc
-convallis est commodo laoreet. Quisque interdum ultrices ipsum in laoreet.
-Aliquam erat volutpat. Ut justo augue, molestie scelerisque rutrum ultricies,
-lacinia et libero. Fusce malesuada sem ac molestie pharetra. Etiam pulvinar
-nisl eu turpis ultrices, in condimentum ipsum tristique. Quisque ultrices
-euismod magna, quis pulvinar ligula cursus vel. Praesent pharetra, risus vitae
-aliquet elementum, nunc massa condimentum mi, ac varius enim urna id nibh.
-Etiam suscipit ornare accumsan. Nunc eget suscipit diam, ultrices eleifend
-ante.
+It\'s time to take back the Internet.
+=====================================
+Since the summer of 2013, the world has been acutely aware of attempts to
+subvert the Internet\'s infrastructure and repurpose it for global
+surveillance. The world\'s greatest tool for the protection of democracy and
+free speech is under threat from powerful organizations who seek to control it.
 
+This is a problem that fundamentally cannot be regulated away. Even if the NSA
+and GCHQ were entirely defunded, there would always be those with the means
+and ambitions to misuse networking infrastructure. The only solution is to
+switch to technologies which are resistant to attacks and make no assumptions
+about the trustworthiness of other network users.
+
+Our goal: a 100% community-owned network.
+-----------------------------------------
 Praesent auctor elementum lectus vel aliquet. Aliquam ultrices, mi vel gravida
 vulputate, ipsum felis semper magna, sed tempus elit nulla eget nulla. Sed
 feugiat, magna eu rutrum aliquam, ante justo scelerisque arcu, id dapibus dolor
