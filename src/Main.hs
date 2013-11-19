@@ -2,6 +2,9 @@ module Main where
 
 import Hakyll
 import Data.Monoid
+import Data.Functor
+import Debug.Trace
+import System.FilePath.Posix (takeBaseName)
 
 configuration :: Configuration
 configuration = defaultConfiguration
@@ -18,12 +21,15 @@ main = hakyllWith configuration $ do
         route idRoute
         compile copyFileCompiler
 
-    create ["index.html"] $ do
-        route idRoute
-        let (~>)    = constField
-            context = "title" ~> "Boulder Meshnet Project"
-
+    match "pages/*.md" $ do
+        route . customRoute $ (++ ".html") . takeBaseName . show
         compile $ do
-            makeItem ""
-                >>= loadAndApplyTemplate "templates/default.html" context
-                >>= relativizeUrls
+            contents <- itemBody <$> pandocCompiler
+
+            -- Set up the String -> String bindings for our template
+            let (~>)    = constField
+                context = "title"    ~> "Boulder Meshnet Project" <>
+                          "contents" ~> contents
+
+            pandocCompiler >>= loadAndApplyTemplate "templates/default.html" context
+                           >>= relativizeUrls
