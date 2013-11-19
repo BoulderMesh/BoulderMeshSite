@@ -10,31 +10,49 @@
     src: url('../fonts/leaguegothic-regular-webfont.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway_thin-webfont.eot');
+    src: url('../fonts/raleway_thin-webfont.woff') format('woff');
+}
+
 body {
     background-color: #f9f9f9;
     font-family: 'Junction Sans-serif', sans-serif;
+    margin: 0;
+}
+
+.top-bar {
+    background-color: #CEE4E9;
+    height: 70px;
+    padding-top: 10px;
+    box-shadow: 0 0 3px;
 }
 
 .top-bar h1 {
     margin: 10px 10px;
     text-shadow: #888 1px 1px 1px;
-    font-family: 'League Gothic';
+    font-family: 'Raleway';
     text-align: center;
     font-weight: bold;
-    letter-spacing: 3px;
     color: #222;
-    font-size: 70px;
+    font-size: 60px;
 }
 
 .inner-pane {
     max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 50px 100px;
+    margin: 20px auto;
+    padding: 20px 100px;
     background-color: #fff;
-    box-shadow: 0 1px 5px;
+    box-shadow: 0 0 5px;
+    border-radius: 2px;
+}
+
+.inner-pane h1, h2, h3 {
+    text-indent: 1.5em;
 }
 
 .inner-pane p {
     font-size: larger;
+    line-height: 1.5em;
 }
