@@ -1,7 +1,10 @@
 # Header
 menu:
   Home: /
-  Archives: /archives
+  About: /about
+  Meetup: /meetup
+  Chat: /chat
+  Projects: /projects
 rss: /atom.xml
 
 # Content

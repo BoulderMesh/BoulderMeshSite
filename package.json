@@ -1,6 +1,7 @@
 {
-  "name": "hexo-site",
+  "name": "BoulderMeshSite",
   "version": "2.5.7",
   "private": true,
+  "description": "Boulder Mesh website project.",
   "dependencies": {}
 }
