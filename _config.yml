@@ -101,4 +101,6 @@ stylus:
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: github
+  repository: git@github.com:BoulderMesh/BoulderMesh.github.io.git
+  branch: master
