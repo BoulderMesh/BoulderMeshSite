@@ -1,0 +1,135 @@
+
+grid-width = 1200px
+grid-min-width = 960px
+@import 'fluidity'
+
+body
+	overflow auto
+
+// main menu at the top of the page
+#menu
+	background-image url(../img/concrete_wall.png)
+	border-top 3px solid #636F7A
+	border-bottom 3px solid #636F7A
+	box-shadow inset 0 0 5px rgba(0, 0, 0, 0.5)
+	padding 15px 0
+
+// turn #menu-inner into a grid so it centers
+#menu-inner
+	grid()
+	#menu-left
+		grid-space(70%)
+	#menu-right
+		grid-space(30%)
+		text-align right
+	a
+		border-radius 4px
+		color #FFFFFF
+		display inline-block
+		margin-right 15px
+		padding 2px 8px
+		text-decoration none
+		transition background-color 0.4s
+	a:hover
+		color #212529
+		background-color #8697A6
+	img
+		max-height 20px
+		vertical-align middle
+
+// hexagon background
+#content-outer
+	background-image url(../img/hexellence.png)
+
+// white background for content area
+#content-outer2
+	background-color rgba(230, 240, 235, 0.5)
+
+// the container for left and right sides 
+#content
+	grid()
+	background-color rgba(250, 255, 255, 0.9)
+	a
+		color #565902
+	a:hover
+		color #888C03
+
+// left side where the articles show
+#articles
+	grid-space(70%)
+	margin-bottom 10px
+	section:nth-child(even)
+		background-color #E9F5F5
+		box-shadow inset 0 0 5px rgba(0, 0, 0, 0.05)
+	h1,h2,h3,h4,h5,h6
+		color #636F7A
+		font-weight normal
+	time
+		text-align right
+		display block
+	p
+		line-height 1.6em
+		code
+			display inline-block
+			padding 2px 4px
+			border 0
+			margin 2px
+			border-radius 3px
+	#paginator
+		text-align center
+		a,span
+			display inline-block
+			margin-right 10px
+
+// right side where the logo and recent posts go
+#activity
+	grid-space(30%)
+	margin-top 10px
+	*
+		max-width 100%
+	h1,h2,h3,h4,h5,h6
+		font-weight normal
+	#recent-posts
+		a
+			display block
+		time
+			font-size 0.8em
+			display block
+
+// the footer	
+#bottom
+	border-top 3px solid #888C03
+	border-bottom 3px solid #888C03
+	background-color #565902
+	color #D9D0C7
+
+// center the inside of the bottom part
+#bottom-inner
+	grid()
+	margin 10px auto
+	a
+		color #A6826D
+		font-size 0.8em
+	.title
+		font-weight bold
+		margin-bottom 10px
+	h3,h4,h5
+		font-weight normal
+	#site-info
+		grid-space(33%)
+		small
+			display block
+		.subtitle
+			border-left 3px solid #888C03
+			border-radius 3px
+			padding 3px 6px
+			font-size 0.8em
+			margin-bottom 10px
+	#site-pages
+		grid-space(33%)
+	#site-posts
+		grid-space(33%)
+
+// put inside grid-spaces
+.inner
+	padding 0 10px

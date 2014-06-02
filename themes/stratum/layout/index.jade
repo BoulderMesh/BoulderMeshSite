@@ -1,0 +1,8 @@
+
+//- see the theme's _config.yml for index pages
+each index_page in theme.index_pages
+	each page in site.pages.toArray()
+		if index_page === page.source.split('/')[0]
+			section
+				header: h3!= page.title
+				div!= page.content

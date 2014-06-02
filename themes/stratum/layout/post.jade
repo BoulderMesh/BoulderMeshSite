@@ -1,0 +1,8 @@
+
+- var post = page
+include includes/post
+
+if page.total > 1
+	#paginator!= paginator({ prev_text: '&laquo; Prev', next_text: 'Next &raquo;' })
+else
+	small [ No other pages to display. ]

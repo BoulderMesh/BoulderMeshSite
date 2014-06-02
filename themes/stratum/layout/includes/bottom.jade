@@ -1,0 +1,23 @@
+#site-info
+	.inner
+		small.title= config.title
+		if config.subtitle
+			small.subtitle= config.subtitle
+		small.title credits
+		ul
+			li: a(href='http://hexo.io',target='_blank') hexo
+			li: a(href='http://www.subtlepatterns.com',target='_blank') subtlepatterns						
+			li: a(href='http://www.fluiditycss.com',target='_blank') fluidity						
+#site-pages
+	.inner
+		small.title pages
+		ul
+			each page in site.pages.toArray()
+				if theme.index_pages.indexOf(page.source.split('/')[0]) === -1
+					li: a(href=config.root + page.path)= page.title
+#site-posts
+	.inner
+		small.title posts
+		ul
+		each post in site.posts.toArray()
+			li: a(href=config.root + post.path)= post.title

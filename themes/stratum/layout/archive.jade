@@ -1,0 +1,9 @@
+
+
+each post in site.posts.limit(2).toArray()
+	include includes/post
+h3 Older
+each post in site.posts.skip(2).toArray()
+	a(href=config.root + post.path)= post.title
+		if post.date
+			time(datetime=post.date.toJSON())= date(post.date, date_format)

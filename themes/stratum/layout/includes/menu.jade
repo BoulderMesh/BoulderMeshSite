@@ -1,0 +1,13 @@
+
+#menu-left
+	each url, label in theme.menu
+		a(href=url)= label
+
+#menu-right
+	if theme.twitter_link
+		a(href=theme.twitter_link)
+			img(src=config.root + 'img/social1.png')
+	if theme.facebook_link
+		a(href=theme.facebook_link)
+			img(src=config.root + 'img/social2.png')
+	

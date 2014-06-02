@@ -1,0 +1,30 @@
+
+- var pageTitle = page.title || config.subtitle || '';
+- if (is_archive()) pageTitle = 'Archives';
+- if (is_month()) pageTitle += ': ' + page.year + '/' + page.month;
+- if (is_year()) pageTitle += ': ' + page.year;
+- pageTitle += ' [ ' + config.title + ' ]';
+
+doctype html
+html(lang='en')
+	head
+		meta(charset='UTF-8')
+		title= pageTitle
+		//- stylesheets are configured in the theme config yaml
+		each url in theme.stylesheets
+			link(rel='stylesheet', href=url)
+	body
+		nav#menu
+			#menu-inner
+				include includes/menu
+		#content-outer
+			#content-outer2
+				#content
+					.inner
+						#articles!= body
+					#activity
+						.inner
+							include includes/activity
+		#bottom
+			#bottom-inner
+				include includes/bottom

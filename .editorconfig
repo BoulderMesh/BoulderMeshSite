@@ -13,10 +13,10 @@ insert_final_newline = true
 indent_style = tab
 indent_size = 4
 
-# html files
-[*.html]
+# jade files
+[*.jade]
 indent_style = tab
-indent_size = 4
+indent_size = 2
 
 # npm, bower file format
 [{package.json,bower.json,.bowerrc}]

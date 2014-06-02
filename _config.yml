@@ -35,10 +35,10 @@ multi_thread: true
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
-highlight:
-  enable: true
-  line_number: true
-  tab_replace:
+# highlight:
+#   enable: true
+#   line_number: true
+#   tab_replace:
 
 # Category & Tag
 default_category: uncategorized
@@ -50,8 +50,8 @@ tag_map:
 ## 1: Disable pagination
 ## 0: Fully Disable
 archive: 2
-category: 2
-tag: 2
+category: 0
+tag: 0
 
 # Server
 ## Hexo uses Connect as a server
@@ -80,7 +80,7 @@ disqus_shortname:
 # Extensions
 ## Plugins: https://github.com/tommy351/hexo/wiki/Plugins
 ## Themes: https://github.com/tommy351/hexo/wiki/Themes
-theme: landscape
+theme: stratum
 exclude_generator:
 
 # Markdown

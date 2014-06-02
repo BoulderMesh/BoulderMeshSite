@@ -1,0 +1,12 @@
+
+a(href=config.root)
+	img(src=theme.logo, alt=site.title)
+
+if site.posts.length > 0
+	h3 Recent Posts
+	ul#recent-posts
+		each post in site.posts.sort('date', -1).limit(5).toArray()
+			li
+				a(href=config.root + post.path)= post.title
+				if post.date
+					time(datetime=post.date.toJSON())= date(post.date, date_format)

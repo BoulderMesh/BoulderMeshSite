@@ -1,7 +1,14 @@
 {
   "name": "BoulderMeshSite",
-  "version": "2.5.7",
+  "version": "2.6.1",
   "private": true,
   "description": "Boulder Mesh website project.",
-  "dependencies": {}
+  "dependencies": {
+    "fluidity": "^0.2.0",
+    "hexo-renderer-jade": "^0.1.0",
+    "hexo-renderer-marked": "^0.1.0",
+    "jade": "^1.3.1",
+    "lodash": "^2.4.1",
+    "stylus": "^0.45.1"
+  }
 }

@@ -1,0 +1,24 @@
+
+# logo at the top right
+logo: /img/boulder-mesh.png
+
+# main menu at the top of the page
+menu:
+  Home: /
+  # Blog: /archives
+
+# social links at top right
+twitter_link: https://twitter.com/hashtag/bouldermesh
+#facebook_link:
+
+# the pages that show up on the front page in sections
+# see /source/ to list pages
+index_pages:
+- about
+- connecting
+- meetup
+- chat
+
+# what stylesheets to put on the layout
+stylesheets:
+- /css/main.css

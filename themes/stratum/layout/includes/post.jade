@@ -1,0 +1,10 @@
+
+article
+	header
+		h3= post.title
+		if post.date
+			time(datetime=post.date.toJSON())= date(post.date, date_format)
+	!= post.content
+
+br
+hr
