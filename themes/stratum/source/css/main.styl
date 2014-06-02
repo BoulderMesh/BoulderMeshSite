@@ -1,7 +1,11 @@
 
+// import fluidity
 grid-width = 1200px
 grid-min-width = 960px
 @import 'fluidity'
+
+// import fonts
+@import '_fonts'
 
 body
 	overflow auto
@@ -63,12 +67,15 @@ body
 		box-shadow inset 0 0 5px rgba(0, 0, 0, 0.05)
 	h1,h2,h3,h4,h5,h6
 		color #636F7A
+		font-family Dosis, sans-serif
 		font-weight normal
 	time
 		text-align right
 		display block
 	p
+		font-family Lora, sans-serif
 		line-height 1.6em
+		text-align justify
 		code
 			display inline-block
 			padding 2px 4px
@@ -88,6 +95,7 @@ body
 	*
 		max-width 100%
 	h1,h2,h3,h4,h5,h6
+		font-family Dosis, sans-serif
 		font-weight normal
 	#recent-posts
 		a
@@ -113,7 +121,8 @@ body
 	.title
 		font-weight bold
 		margin-bottom 10px
-	h3,h4,h5
+	h1,h2,h3,h4,h5,h6
+		font-family Dosis, sans-serif
 		font-weight normal
 	#site-info
 		grid-space(33%)
