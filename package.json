@@ -1,6 +1,6 @@
 {
   "name": "BoulderMeshSite",
-  "version": "2.6.3",
+  "version": "2.8.1",
   "private": true,
   "description": "Boulder Mesh website project.",
   "dependencies": {
